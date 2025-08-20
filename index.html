@@ -1,59 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <script src="./script.js" defer></script>
     <title>Myo Win | Developer</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- Vanta JS Background -->
     <div id="bg-VantaJS"></div>
 
     <div class="container">
-      <header>
-        <div class="nav">
-          <div class="logo">MW</div>
-          <nav>
-            <ul class="navLink">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
+
+        <!-- Header & Navigation -->
+        <header>
+            <div class="nav">
+                <div class="logo">MW</div>
+                <nav>
+                    <ul class="navLink">
+                        <li><a href="#" id="selected">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <div class="heroSection">
+            <div class="first-section">
+            <section>
+                <div class="greetingText">
+                    <div class="line"></div>
+                    <h4 class="name">Hi, I am Myo Win</h4>
+                </div>
+                <h1 class="android">Android</h1>
+                <h1 class="developer">Developer</h1>
+
+                <!-- Btn Section -->
+                <div class="btn-download">
+                    <button class="cv">
+                        <i class="fas fa-download"></i>Download CV</button>
+                    <button class="apk">
+                        <i class="fas fa-mobile-alt"></i>Download APK</button>
+                </div>
+
+            </section>
+            </div>
+            <div class="second-section">
+                <div class="line"></div>
+                <div class="description">I craft inclusive, accessible apps with Java, Kotlin,<br> and Flutter, enhancing human-tech interaction at scale.</div>
+            </div>
         </div>
-      </header>
+
+        <!-- Bottom Tab Bar -->
+         <div class="bottom-tab">
+            <ul class="navLink" id="#bottom-tab">
+                        <li><a href="#" id="selected">Industry</a></li>
+                        <li><a href="#">Tech</a></li>
+                        <li><a href="#">Method</a></li>
+                    </ul>
+         </div>
+
+        <!-- Bottom Bar Section -->
+         <footer>
+            <div class="footer-container">
+            <div class="footer-bar">
+                <ul class="industry">
+                    <li class="active">IT</li>
+                    <li class="active">Software</li>
+                    <li class="active">Mobile</li>
+                    <li class="inactive">AI</li>
+                    <li class="inactive">ML</li>
+                </ul>
+            </div>
+            <div class="latestUpdate">Latest Updated : <span class="date">Aug 21 2025</span></div>
+            </div>
+         </footer>
     </div>
-  </body>
-  <script>
-    // Initialize Vanta.js
+</body>
+<!-- <script>
     VANTA.GLOBE({
-      el: "#bg-VantaJS",
-      color: 0x4dc2ff,
-      backgroundColor: 0x0d1117,
-      points: 12.0,
-      maxDistance: 22.0,
-      spacing: 19.0,
+        el: "#bg-VantaJS",
+        color: 0x4dc2ff,
+        backgroundColor: 0x0d1117,
+        points: 12.0,
+        maxDistance: 22.0,
+        spacing: 19.0,
     });
+</script> -->
 
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-      anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-
-        const targetId = this.getAttribute("href");
-        if (targetId === "#") return;
-
-        const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-          targetElement.scrollIntoView({
-            behavior: "smooth",
-          });
-        }
-      });
-    });
-  </script>
 </html>
