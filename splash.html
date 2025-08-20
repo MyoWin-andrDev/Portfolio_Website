@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Splash</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.container {
+    width: 1440px;
+    width: 100%;
+    height: 100%;
+}
+
+/* Website Theme Color */
+:root {
+    --primary-color: #FFFFFF;
+    --secondary-color: #17191F;
+    --btn-color: #565656;
+    --black-text: #06070A;
+    --grey-text: #66616F;
+}
+.splash{
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+}
+.span{
+    width: 2px;
+    height: 10px;
+    background-color: var(--secondary-color);
+}
+    </style>
+</head>
+<body>
+    <div class="splash">
+        <h1 class="name">Myo Win</h1>
+        <span></span>
+        <h1 class="role">Developer</h1>
+    </div>
+</body>
+</html>
