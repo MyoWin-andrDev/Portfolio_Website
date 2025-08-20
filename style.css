@@ -1,0 +1,14 @@
+/* Website Theme Color */
+:root{
+    --primary-color : #FFFFFF;
+    --secondary-color : #17191F;
+    --btn-color : #565656;
+    --black-text : #06070A;
+    --grey-text : #66616F;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
