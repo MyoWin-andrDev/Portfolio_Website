@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     VANTA.GLOBE({
         el: "#bg-VantaJS",
         color: 0x17191F,
-        color2 : 0x565656,
+        color2: 0x565656,
         backgroundColor: 0xffffff,
         points: 12.0,
         maxDistance: 22.0,
@@ -26,4 +26,10 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
+    // Fade-in effect
+    setTimeout(() => {
+        document.body.classList.add('fade-in');
+        document.querySelector('.container').classList.add('fade-in');
+    }, 100);
 });
+
